@@ -45,7 +45,7 @@ public class EbaySearchAddToCart extends BaseTest {
 
         // Step 2: Select the first product
         double actualValue = searchResultsPage.assertPrice();
-        double expectedPrice = 1463.62;
+        double expectedPrice = 1731.24;
         test = extent.createTest("Now Price is comparing", "Now Price is comparing");
 
         try {

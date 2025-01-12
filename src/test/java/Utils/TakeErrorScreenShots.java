@@ -16,7 +16,7 @@ public class TakeErrorScreenShots {
     public static String takeScreenshot(WebDriver driver, String screenshotName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         //String filePath = "src/test/resources/ScreenShots/" + screenshotName + "_" + timestamp + ".png";
-        String filePath = "src/test/resources/ScreenShots" + screenshotName + "_" + timestamp + ".png";
+        String filePath = "C:/Users/Pasindu/OneDrive/Desktop/temp/Semester 4 Past Papers/QA Assignement/AssignmentThreeWithPOM/src/test/resources/ScreenShots/" + screenshotName + "_" + timestamp + ".png";
         // Take the screenshot
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File destFile = new File(filePath);

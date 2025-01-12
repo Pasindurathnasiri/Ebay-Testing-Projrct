@@ -23,7 +23,7 @@ public class DealsPageInfoChecker extends BaseTest {
         DealsPage dealsPage = new DealsPage(driver);
 
         // Initialize Excel Information
-        String excelFilePath = "src/test/resources/testdata/TestData.xlsx";
+        String excelFilePath = "src/test/resources/testdata/TestData 2.xlsx";
         String sheetName = "Data";
 
         // Initialize ExcelUtils

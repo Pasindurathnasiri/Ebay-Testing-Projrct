@@ -19,7 +19,7 @@ public class EbaySearchWithWrongLocator extends BaseTest {
 
     @Test
     public void searchAndBuySamsungPhone() {
-        String excelFilePath = "src/test/resources/testdata/TestData.xlsx";
+        String excelFilePath = "src/test/resources/testdata/TestData 2.xlsx";
         String sheetName = "Data";
         // Initialize ExcelUtils
         ExcelHandler excel = new ExcelHandler(excelFilePath, sheetName);
