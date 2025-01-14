@@ -15,7 +15,7 @@ public class SearchResultsPage {
     @FindBy(xpath = "/html/body/div[5]/div[4]/div[3]/div[1]/div[3]/ul/li[1]/div")
     WebElement firstProduct;
 
-    @FindBy(xpath = "/html/body/div[5]/div[4]/div[3]/div[1]/div[3]/ul/li[1]/div/div[2]/div[4]/div[1]/div[1]/span")
+    @FindBy(xpath = "//*[@id=\"item52fcf94f08\"]/div/div[2]/div[3]/div[1]/div[1]/span")
     WebElement itemPrice;
 
     // Constructor to initialize elements

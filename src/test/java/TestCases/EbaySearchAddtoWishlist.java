@@ -9,7 +9,7 @@ import Utils.TakeErrorScreenShots;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class EbaySearchAddtoWatchlist extends BaseTest {
+public class EbaySearchAddtoWishlist extends BaseTest {
 
     @BeforeTest
     public void setup() {

@@ -33,10 +33,6 @@ public class BaseTest {
         extent.attachReporter(sparkReporter);
     }
 
-    /**
-     * Set a custom name for the Extent Report.
-     * @param customName The custom name for the report.
-     */
     public void setReportName(String customName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         reportFileName = customName + "_" + timestamp + ".html";
@@ -47,26 +43,12 @@ public class BaseTest {
         extent.attachReporter(sparkReporter);
     }
 
-    /**
-     * Start a test in Extent Report with a given name.
-     *
-     * @param testName Name of the test case.
-     */
     public void startTest(String testName) {
         test = extent.createTest(testName);
     }
 
     @BeforeClass
     public void setUpBrowser() {
-
-        // Configure Chrome to run in headless mode
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1920,1080");
-
-        // Initialize WebDriver with options
-        //WebDriver driver = new ChromeDriver(options);
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
